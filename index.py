@@ -7,11 +7,13 @@ def calculate_discount(price, discount_percent):
         return price
     
 def main():
-    original_price=input("Enter the original price of the item")
-    discount = input("Enter the discount percentage without percent sign")
+    original_price=float(input("Enter the original price of the item: R"))
+    discount = float(input("Enter the discount percentage without percent sign: "))
     final_price = calculate_discount(original_price, discount)
 
     if discount >= 20:
-        print(f"Your final price is -> {final_price}")
+        print(f"Your final price is -> R{final_price}")
     else:
-        print(f"No discount was given. The price to pay is -> {original_price}")
+        print(f"No discount was given. The price to pay is -> R{original_price}")
+
+main()
